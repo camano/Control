@@ -15,7 +15,7 @@
         </div>
         <div class="form-group col-md-6">
             <label for="inputPassword4">Región</label>
-            <input type="text" name="" class="form-control" id="inputPassword4">
+            <input type="text" name="Region" class="form-control" id="inputPassword4">
         </div>
         <div class="form-group col-md-6">
             <label for="inputEmail4">Contraseña 1</label>

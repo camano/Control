@@ -8,12 +8,13 @@ class usuarioModelo extends mainModel
     /*----- Agregar Usuario -----*/
     protected static function agregar_usuario_modelo($datos)
     {
-        $stmt = mainModel::conectar()->prepare("INSERT INTO usuario (usuario_nombre ,usuario_contraseña,usuario_estado,usuario_rol )
-        VALUES (:nombre,:contra,:estado,:rol);");
+        $stmt = mainModel::conectar()->prepare("INSERT INTO usuario (usuario_nombre ,usuario_contraseña,usuario_estado,usuario_rol,usuario_region )
+        VALUES (:nombre,:contra,:estado,:rol,:region);");
         $stmt->bindParam(':nombre', $datos['Nombre']);
         $stmt->bindParam(':contra', $datos['Contraseña']);
         $stmt->bindParam(':estado', $datos['Estado']);
         $stmt->bindParam(':rol', $datos['Rol']);
+        $stmt->bindParam(':region',$datos['Region']);
         $stmt->execute();
 
         return $stmt;

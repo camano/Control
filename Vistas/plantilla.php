@@ -36,6 +36,7 @@
         <div class="d-flex" id="wrapper">
             <!-- Sidebar -->
             <?php include "./Vistas/Modulo/nav.php"; ?>
+          
             <!-- /#sidebar-wrapper -->
             <!-- Page Content -->
             <div id="page-content-wrapper">

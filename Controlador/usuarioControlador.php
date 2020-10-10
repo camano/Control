@@ -15,6 +15,7 @@ class usuarioControlador extends usuarioModelo
         $contraseña = mainModel::limpiar_cadena($_POST['Contraseña']);
         $estado = mainModel::limpiar_cadena($_POST['Estado']);
         $rol = mainModel::limpiar_cadena($_POST['Rol']);
+        $region=mainModel::limpiar_cadena($_POST['Region']);
 
 
 
@@ -51,6 +52,7 @@ class usuarioControlador extends usuarioModelo
             "Contraseña" => $clave,
             "Estado" => $estado,
             "Rol" => $rol,
+            "Region"=>$region,
 
         ];
 
